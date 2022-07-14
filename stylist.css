@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+body {
+    background-color: #e69100;
+}
+#leftdiv
+{
+    background-color: #fff;
+	border-style: outset;
+	position: absolute;
+	top: 20%;
+	height: 80%;
+	width: 31%;
+    border-radius: 10%;
+}
+#rawInput
+{
+    position: absolute;
+	bottom: 4%;
+	left: 10%;
+	width: 90%;
+	resize: none;
+    overflow-y: scroll;
+    min-height: 50px;
+    max-height: 200px;
+}
+#midDiv
+{
+    background-color: #fff;
+    border-style: outset;
+    position: absolute;
+    left: 34%;
+    top: 20%;
+    height: 80%;
+    width: 31%;
+    border-radius: 10%;
+}
+#rightDiv
+{
+    background-color: #fff;
+	border-style: outset;
+	margin-right: 0px;
+	position: absolute;
+	top: 20%;
+	right: 2%;
+    height: 80%;
+	width: 31%;
+    border-radius: 10%;
+}
+#inputedNames{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  resize: none;
+  overflow-y: auto;
+  min-height: 200px;
+  max-height: 100px;
+  background-color: white;
+  border-radius: 10%;
+  padding: 10px;
+}
+#dc1
+{
+	position: relative;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	resize: none;
+    overflow-y: scroll;
+    min-height: 50px;
+    max-height: 100px;
+}
+#dc2,#dc3
+{
+	position: relative;
+	top: 0%;
+	left: 10%;
+	width: 90%;
+	resize: none;
+    overflow-y: auto;
+    min-height: 80%;
+    max-height: 100px;
+}
+.btnsub {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  margin-bottom: 100px;
+}
+
+.btnsub span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btnsub:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #78c7d2;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btnsub:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px; 
+}
+#childMidDiv{
+  padding: 10px;
+}
+#fn{
+  font-family: Helvetica;
+  font-size: 14px; 
+}
+#fnWchar{
+  font-family: Helvetica;
+  color: #ff2b47;
+  font-size: 14px; 
+}
+#fnWnum{
+  font-family: Helvetica;
+  color: #eba834;
+  font-size: 14px; 
+}
+#preloader
+{
+    background: #fff url(images/loading1.gif) no-repeat center center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.progressParent {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    display: none;
+
+}
+.progress {
+  position: absolute;
+  width: 210px;
+  height: 30px;
+  background: #9cbab4;
+  border-radius: 5px;
+  top: 50%;
+  left: 40%;
+  overflow: hidden;
+  display: none;
+}
+
+.progress__fill {
+  width: 0%;
+  height: 100%;
+  background: #009579;
+  transition: all 0.9s;
+}
+
+.progress__text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font: bold 14px "Quicksand", sans-serif;
+  color: #ffffff;
+}
+
